@@ -38,53 +38,210 @@
         <div class="geometry-item">
           <img src="images/triangle.png" alt="" />
           <h1>Triangle</h1>
-          <p class="">Area (A) = 0.5 <span>&#215;</span> b <span>&#215;</span> h</p>
-          <input class="w-25 mx-2" type="text" placeholder="b" />
+          <p>
+            Area (A) = 0.5 <span>&#215;</span>
+            <span id="triangle-b-value">b</span> <span>&#215;</span>
+            <span id="triangle-h-value">h</span>
+          </p>
+          <input
+            id="triangle-b"
+            class="w-25 mx-2"
+            type="text"
+            placeholder="b"
+          />
           <span>cm</span>
-          <input class="w-25 mx-2" type="text" placeholder="h" />
+          <input
+            id="triangle-h"
+            class="w-25 mx-2"
+            type="text"
+            placeholder="h"
+          />
           <span>cm</span>
-          <button class="btn btn-info d-block w-100 mt-4">Calculate</button>
+          <button id="triangle-btn" class="btn btn-info d-block w-100 mt-4">
+            Calculate
+          </button>
         </div>
         <div class="geometry-item">
           <img src="images/rectangle.png" alt="" />
           <h1>Rectangle</h1>
-          <p class="">Area (A) = w <span>&#215;</span> l</p>
-          <input class="w-25 mx-2" type="text" placeholder="w" />
+          <p>
+            Area (A) = <span id="rectangle-w-value">w</span>
+            <span>&#215;</span> <span id="rectangle-p-value">p</span>
+          </p>
+          <input
+            id="rectangle-w"
+            class="w-25 mx-2"
+            type="text"
+            placeholder="w"
+          />
           <span>cm</span>
-          <input class="w-25 mx-2" type="text" placeholder="l" />
+          <input
+            id="rectangle-l"
+            class="w-25 mx-2"
+            type="text"
+            placeholder="p"
+          />
           <span>cm</span>
-          <button class="btn btn-info d-block w-100 mt-4">Calculate</button>
+          <button id="rectangle-btn" class="btn btn-info d-block w-100 mt-4">
+            Calculate
+          </button>
         </div>
         <div class="geometry-item">
           <img src="images/parallelogram.png" alt="" />
           <h1>Parallelogram</h1>
-          <p class="">Area (A) = b <span>&#215;</span> h</p>
-          <p>b = 10cm, h = 12cm</p>
-          <button class="btn btn-info d-block w-100 mt-4">Calculate</button>
+          <p>
+            Area (A) = <span id="parallelogram-b-value">b</span>
+            <span>&#215;</span><span id="parallelogram-h-value">h</span>
+          </p>
+          <input
+            id="parallelogram-b"
+            class="w-25 mx-2"
+            type="text"
+            placeholder="b"
+          />
+          <span>cm</span>
+          <input
+            id="parallelogram-h"
+            class="w-25 mx-2"
+            type="text"
+            placeholder="h"
+          />
+          <span>cm</span>
+          <button
+            id="parallelogram-btn"
+            class="btn btn-info d-block w-100 mt-4"
+          >
+            Calculate
+          </button>
         </div>
         <div class="geometry-item">
           <img src="images/rhombus.png" alt="" />
           <h1>Rhombus</h1>
-          <p class="">Area (A) = 0.5 <span>&#215;</span> d<sub>1</sub> <span>&#215;</span> d<sub>2</sub></p>
-          <p>d<sub>1</sub> = 16cm, d<sub>2</sub> = 8cm</p>
-          <button class="btn btn-info d-block w-100 mt-4">Calculate</button>
+          <p>
+            Area (A) = 0.5 <span>&#215;</span>
+            <span id="rhombus-d1-value">d<sub>1</sub></span>
+            <span>&#215;</span> <span id="rhombus-d2-value">d<sub>2</sub></span>
+          </p>
+          <input
+            id="rhombus-d1"
+            class="w-25 mx-2"
+            type="text"
+            placeholder="d1"
+          />
+          <span>cm</span>
+          <input
+            id="rhombus-d2"
+            class="w-25 mx-2"
+            type="text"
+            placeholder="d2"
+          />
+          <span>cm</span>
+          <button id="rhombus-btn" class="btn btn-info d-block w-100 mt-4">
+            Calculate
+          </button>
         </div>
         <div class="geometry-item">
           <img src="images/pentagon.png" alt="" />
           <h1>Pentagon</h1>
-          <p class="">Area (A) = 0.5 <span>&#215;</span> p <span>&#215;</span> b</p>
-          <p>p = 6cm, b = 10cm</p>
-          <button class="btn btn-info d-block w-100 mt-4">Calculate</button>
+          <p>
+            Area (A) = 0.5 <span>&#215;</span>
+            <span id="pentagon-p-value">p</span> <span>&#215;</span>
+            <span id="pentagon-b-value">b</span>
+          </p>
+          <input
+            id="pentagon-p"
+            class="w-25 mx-2"
+            type="text"
+            placeholder="p"
+          />
+          <span>cm</span>
+          <input
+            id="pentagon-b"
+            class="w-25 mx-2"
+            type="text"
+            placeholder="b"
+          />
+          <span>cm</span>
+          <button id="pentagon-btn" class="btn btn-info d-block w-100 mt-4">
+            Calculate
+          </button>
         </div>
         <div class="geometry-item">
-          <img src="images/triangle.png" alt="" />
-          <h1>Triangle</h1>
-          <p class="">Area (A) = <span>&#8508;</span>ab</p>
-          <p>a = 10cm, b = 4cm</p>
-          <button class="btn btn-info d-block w-100 mt-4">Calculate</button>
+          <img src="images/ellipse.png" alt="" />
+          <h1>Ellipse</h1>
+          <p class="">
+            Area (A) = <span>&#8508; <span>&#215;</span></span>
+            <span id="ellipse-a-value">a</span> <span>&#215;</span
+            ><span id="ellipse-b-value">b</span>
+          </p>
+          <input id="ellipse-a" class="w-25 mx-2" type="text" placeholder="a" />
+          <span>cm</span>
+          <input id="ellipse-b" class="w-25 mx-2" type="text" placeholder="b" />
+          <span>cm</span>
+          <button id="ellipse-btn" class="btn btn-info d-block w-100 mt-4">
+            Calculate
+          </button>
         </div>
       </section>
-      <div class="area-calculation"> <u>Area Calculation</u></div>
+      <div class="area-calculation">
+        <u>Area Calculation</u>
+
+        <div id="triangle-output" class="include-value-area">
+          <p>1. Triangle</p>
+          <p>
+            <span id="triangle-output-value">0</span
+            ><span>cm <sup>2</sup> </span>
+          </p>
+          <button>convert to m <sup>2</sup></button>
+        </div>
+        <div id="rectangle-output" class="include-value-area">
+          <p>2. Rectangle</p>
+          <p>
+            <span id="rectangle-output-value">0</span
+            ><span>cm <sup>2</sup> </span>
+          </p>
+          <button>convert to m <sup>2</sup></button>
+        </div>
+        <div id="parallelogram-output" class="include-value-area">
+          <p>3. Parallelogram</p>
+          <p>
+            <span id="parallelogram-output-value">0</span
+            ><span>cm <sup>2</sup> </span>
+          </p>
+          <button>convert to m <sup>2</sup></button>
+        </div>
+        <div id="rhombus-output" class="include-value-area">
+          <p>4. Rhombus</p>
+          <p>
+            <span id="rhombus-output-value">0</span
+            ><span>cm <sup>2</sup> </span>
+          </p>
+          <button>convert to m <sup>2</sup></button>
+        </div>
+        <div id="pentagon-output" class="include-value-area">
+          <p>5. Pentagon</p>
+          <p>
+            <span id="pentagon-output-value">0</span
+            ><span>cm <sup>2</sup> </span>
+          </p>
+          <button>convert to m <sup>2</sup></button>
+        </div>
+        <div id="ellipse-output" class="include-value-area">
+          <p>6. Ellipse</p>
+          <p>
+            <span id="ellipse-output-value">0</span
+            ><span>cm <sup>2</sup> </span>
+          </p>
+          <button>convert to m <sup>2</sup></button>
+        </div>
+      </div>
     </main>
+    <script src="js/main.js"></script>
+    <script src="js/triangle.js"></script>
+    <script src="js/rectangle.js"></script>
+    <script src="js/parallelogram.js"></script>
+    <script src="js/rhombus.js"></script>
+    <script src="js/pentagon.js"></script>
+    <script src="js/ellipse.js"></script>
   </body>
 </html>

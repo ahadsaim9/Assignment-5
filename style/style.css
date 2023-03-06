@@ -27,6 +27,7 @@ body {
   background: #1090d8;
   border-radius: 8px;
 }
+
 #navbar h1 {
   font-family: "Inter";
   font-style: normal;
@@ -61,8 +62,10 @@ body {
   text-align: center;
   padding-top: 30px;
   background-color: #f1f1f1;
+  box-shadow: -4px -4px 10px rgba(128, 128, 128, 0.342);
 }
 .geometry-item {
+  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.342);
   padding: 44px;
   border: 1px solid rgba(128, 128, 128, 0.121);
   border-radius: 10px;
@@ -92,14 +95,6 @@ input {
   .geometry-section {
     grid-template-columns: 1fr 1fr;
   }
-}
-@media screen and (max-width: 992px) {
-  .main-container {
-    grid-template-columns: 3fr 1fr;
-    gap: 15px;
-  }
-}
-@media screen and (max-width: 800px) {
   .main-container {
     grid-template-columns: 1fr;
   }
@@ -107,7 +102,8 @@ input {
     height: 200px;
   }
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 572px) {
   .geometry-section {
     grid-template-columns: 1fr;
   }
@@ -130,3 +126,30 @@ input {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 290px) {
+  .geometry-item {
+    padding: 15px;
+  }
+  img {
+    height: 120px;
+  }
+}
+
+/* Include Output Area */
+
+
+.include-value-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5px;
+  font-size: 14px;
+  display: none;
+}
+.include-value-area button {
+  font-size: 10px;
+  background-color: lightblue;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+}
+
